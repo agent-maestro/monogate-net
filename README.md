@@ -3,7 +3,7 @@
 Static MVP for `monogate.net`.
 
 This is an ecosystem navigator, not a command center or dashboard. It links the
-main Monogate surfaces and marks private/internal links clearly.
+main public Monogate surfaces. Private dashboards are intentionally omitted.
 
 ## Files
 

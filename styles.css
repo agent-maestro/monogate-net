@@ -144,11 +144,6 @@ footer p {
   border-radius: 8px;
 }
 
-.card.private {
-  border-color: rgba(240, 195, 106, 0.55);
-  background: linear-gradient(180deg, rgba(240, 195, 106, 0.08), var(--panel));
-}
-
 .package-table {
   overflow: hidden;
   border: 1px solid var(--line);

@@ -1,9 +1,9 @@
 # Monogate Network Navigator
 
-Static MVP for `monogate.net`.
+Static navigator for `monogate.net`.
 
-This is an ecosystem navigator, not a command center or dashboard. It links the
-main public Monogate surfaces. Private dashboards are intentionally omitted.
+This is a public ecosystem navigator, not an operations hub, dashboard, auth
+surface, or package registry. It links the main public Monogate surfaces.
 
 ## Files
 

@@ -12,141 +12,221 @@
   </head>
   <body>
     <header class="site-header">
-      <div>
+      <nav class="topbar" aria-label="Primary">
+        <a class="brand-link" href="https://monogate.org">Monogate</a>
+        <div class="top-links">
+          <a href="https://x.com/monogate_org">X</a>
+          <a href="#packages">Packages</a>
+          <a href="#data-labs">Data / labs</a>
+        </div>
+      </nav>
+
+      <section class="hero" aria-labelledby="hero-title">
         <p class="eyebrow">Monogate Network</p>
-        <h1>Ecosystem map</h1>
+        <h1 id="hero-title">Monogate Network</h1>
+        <p class="subtitle">Ecosystem map</p>
         <p class="lede">One source, many artifacts, preserved identity.</p>
-      </div>
-      <p class="status-pill">in development</p>
+        <p class="status-pill">in development</p>
+        <p class="hero-note">A static public navigator for Monogate research, tools, packages, math infrastructure, agent evidence, and experiences.</p>
+      </section>
     </header>
 
     <main>
-      <section class="notice" aria-label="status note">
-        <h2>Launch/status note</h2>
-        <p>
-          This static navigator is a lightweight map of public Monogate surfaces.
-          It is not a command center, dashboard, auth surface, package registry,
-          or product claim page.
-        </p>
+      <section class="spine" aria-labelledby="spine-title">
+        <div class="section-heading compact">
+          <p class="eyebrow">Network spine</p>
+          <h2 id="spine-title">From source to ecosystem</h2>
+        </div>
+        <ol class="spine-list" aria-label="Monogate network spine">
+          <li>EML</li>
+          <li>Forge</li>
+          <li>eFrog</li>
+          <li>MachLib</li>
+          <li>CapCard</li>
+          <li>Experiences</li>
+          <li>Packages</li>
+        </ol>
       </section>
 
-      <section aria-labelledby="ecosystem-title">
+      <section aria-labelledby="core-title" class="surface-section">
         <div class="section-heading">
-          <h2 id="ecosystem-title">Ecosystem cards</h2>
-          <p>Public surfaces only. Private dashboards are intentionally omitted.</p>
+          <p class="eyebrow">Core</p>
+          <h2 id="core-title">Primary surfaces</h2>
         </div>
-        <div class="card-grid">
-          <article class="card">
+        <div class="card-grid two-up">
+          <article class="card feature-card">
             <p class="tag">home</p>
             <h3>Monogate</h3>
             <p>Primary organization surface and ecosystem entry point.</p>
             <a href="https://monogate.org">monogate.org</a>
           </article>
+          <article class="card feature-card">
+            <p class="tag">social</p>
+            <h3>Monogate on X</h3>
+            <p>Public updates and lightweight ecosystem notes.</p>
+            <a href="https://x.com/monogate_org">x.com/monogate_org</a>
+          </article>
+        </div>
+      </section>
 
+      <section aria-labelledby="dev-title" class="surface-section">
+        <div class="section-heading">
+          <p class="eyebrow">Developer tools</p>
+          <h2 id="dev-title">Build and learn</h2>
+        </div>
+        <div class="card-grid">
           <article class="card">
-            <p class="tag">learn / tools</p>
+            <p class="tag">learn / labs</p>
             <h3>Monogate Dev</h3>
             <p>Developer-facing learning pages, labs, and tool introductions.</p>
             <a href="https://monogate.dev">monogate.dev</a>
           </article>
-
           <article class="card">
             <p class="tag">compiler</p>
             <h3>Forge</h3>
             <p>EML tooling and target-oriented compiler surface.</p>
             <a href="https://monogateforge.com">monogateforge.com</a>
           </article>
-
           <article class="card">
             <p class="tag">source bridge</p>
             <h3>eFrog</h3>
             <p>Supported source-to-EML workflow surface.</p>
             <a href="https://efrog.dev">efrog.dev</a>
           </article>
+        </div>
+      </section>
 
+      <section aria-labelledby="formal-title" class="surface-section">
+        <div class="section-heading">
+          <p class="eyebrow">Formal / math</p>
+          <h2 id="formal-title">Math infrastructure</h2>
+        </div>
+        <div class="card-grid">
           <article class="card">
             <p class="tag">math library</p>
-            <h3>Machlib</h3>
+            <h3>MachLib</h3>
             <p>Mathematical and symbolic tooling surface.</p>
             <a href="https://machlib.org">machlib.org</a>
           </article>
+        </div>
+      </section>
 
+      <section aria-labelledby="agent-title" class="surface-section">
+        <div class="section-heading">
+          <p class="eyebrow">Agent evidence</p>
+          <h2 id="agent-title">Capability records</h2>
+        </div>
+        <div class="card-grid">
           <article class="card">
-            <p class="tag">agent evidence</p>
+            <p class="tag">cards</p>
             <h3>CapCard</h3>
             <p>Capability cards and evidence-oriented agent workflow surface.</p>
             <a href="https://capcard.ai">capcard.ai</a>
           </article>
-
           <article class="card">
             <p class="tag">operator</p>
             <h3>1OP</h3>
             <p>One-operator workflow and coordination surface.</p>
             <a href="https://1op.io">1op.io</a>
           </article>
+        </div>
+      </section>
 
+      <section aria-labelledby="experience-title" class="surface-section">
+        <div class="section-heading">
+          <p class="eyebrow">Experiences</p>
+          <h2 id="experience-title">Interactive surfaces</h2>
+        </div>
+        <div class="card-grid">
           <article class="card">
             <p class="tag">experience</p>
             <h3>Glass Box</h3>
             <p>Web experience surface in development.</p>
             <a href="https://glassbox.monogate.dev">glassbox.monogate.dev</a>
           </article>
-
         </div>
       </section>
 
-      <section aria-labelledby="packages-title">
+      <section id="packages" aria-labelledby="packages-title" class="surface-section">
         <div class="section-heading">
-          <h2 id="packages-title">Package list</h2>
-          <p>Published package surfaces currently tracked by the ecosystem.</p>
+          <p class="eyebrow">Packages</p>
+          <h2 id="packages-title">Published package surfaces</h2>
         </div>
         <div class="package-table" role="table" aria-label="Monogate package list">
           <div role="row" class="table-head">
             <span role="columnheader">Package</span>
             <span role="columnheader">Role</span>
-            <span role="columnheader">Status</span>
+            <span role="columnheader">Link</span>
           </div>
           <div role="row">
             <span role="cell">monogate-forge</span>
             <span role="cell">EML compiler/tooling</span>
-            <span role="cell">published</span>
+            <span role="cell"><a href="https://pypi.org/project/monogate-forge/">PyPI</a></span>
           </div>
           <div role="row">
             <span role="cell">efrog</span>
             <span role="cell">source-to-EML workflow</span>
-            <span role="cell">published</span>
+            <span role="cell"><a href="https://pypi.org/project/efrog/">PyPI</a></span>
           </div>
           <div role="row">
             <span role="cell">eml-cost</span>
             <span role="cell">EML cost analysis</span>
-            <span role="cell">published</span>
+            <span role="cell"><a href="https://pypi.org/project/eml-cost/">PyPI</a></span>
           </div>
           <div role="row">
             <span role="cell">eml-cost-torch</span>
             <span role="cell">optional torch-backed cost tooling</span>
-            <span role="cell">published</span>
+            <span role="cell"><a href="https://pypi.org/project/eml-cost-torch/">PyPI</a></span>
           </div>
           <div role="row">
             <span role="cell">eml-stdlib</span>
             <span role="cell">EML standard utilities</span>
-            <span role="cell">published</span>
+            <span role="cell"><a href="https://pypi.org/project/eml-stdlib/">PyPI</a></span>
           </div>
           <div role="row">
             <span role="cell">monogate-forge-mcp</span>
             <span role="cell">Forge MCP integration</span>
-            <span role="cell">published</span>
+            <span role="cell"><a href="https://pypi.org/project/monogate-forge-mcp/">PyPI</a></span>
           </div>
           <div role="row">
             <span role="cell">monogate-capcard-cli</span>
             <span role="cell">CapCard command-line workflow</span>
-            <span role="cell">published</span>
+            <span role="cell"><a href="https://pypi.org/project/monogate-capcard-cli/">PyPI</a></span>
           </div>
+        </div>
+      </section>
+
+      <section id="data-labs" aria-labelledby="labs-title" class="surface-section labs-section">
+        <div class="section-heading">
+          <p class="eyebrow">Data / labs</p>
+          <h2 id="labs-title">Datasets and lab surfaces</h2>
+          <p>Public dataset surfaces for EML/PETAL and MachLib artifacts.</p>
+        </div>
+        <div class="card-grid">
+          <article class="card muted-card">
+            <p class="tag">API / lab</p>
+            <h3>PETAL</h3>
+            <p>Dataset/API lab for EML artifacts and learning workflows. API/lab surface, in development.</p>
+            <a href="https://api.monogate.dev/api/petal/health">api.monogate.dev/api/petal/health</a>
+          </article>
+          <article class="card muted-card">
+            <p class="tag">dataset</p>
+            <h3>Monogate/petal-eml</h3>
+            <p>Public dataset surface for EML/PETAL artifacts.</p>
+            <a href="https://huggingface.co/datasets/Monogate/petal-eml">huggingface.co/datasets/Monogate/petal-eml</a>
+          </article>
+          <article class="card muted-card">
+            <p class="tag">dataset</p>
+            <h3>Monogate/machlib</h3>
+            <p>Public dataset surface for MachLib artifacts.</p>
+            <a href="https://huggingface.co/datasets/Monogate/machlib">huggingface.co/datasets/Monogate/machlib</a>
+          </article>
         </div>
       </section>
     </main>
 
     <footer>
-      <p>Monogate Network is a public ecosystem navigator. Private dashboards are not linked here.</p>
+      <p>A public map of the Monogate ecosystem: research, tools, packages, math infrastructure, agent evidence, datasets, and experiences.</p>
     </footer>
   </body>
 </html>

@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Monogate — Evidence &amp; Claims Status</title>
+    <meta name="description" content="Monogate brake-side ledger: held lanes, retracted claims, negative results, standing claim rule, Lean status." />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="topbar" aria-label="Primary">
+        <a class="brand-link" href="../">Monogate</a>
+        <div class="top-links">
+          <a href="../">Network</a>
+          <a href="https://monogate.org">monogate.org</a>
+        </div>
+      </nav>
+      <section class="hero" aria-labelledby="page-title">
+        <p class="eyebrow">Evidence &amp; Claims Status</p>
+        <h1 id="page-title">Brake-side ledger</h1>
+        <p class="lede">Held lanes, retracted claims, negative results, standing rule, Lean status. Byte-derived from <code>pub-r0-brake-side-ledger-generator</code> (2026-06-10).</p>
+      </section>
+    </header>
+    <main>
+      <section aria-labelledby="held-title" class="surface-section">
+        <div class="section-heading"><p class="eyebrow">Held lanes</p><h2 id="held-title">Held lanes</h2></div>
+        <ul>
+          <li><code>electronics-inbox</code> — held by <code>ee_bridge_a4_electronics_artifact_inbox_gate_feed</code> — pending_no_artifact</li>
+          <li><code>private-atlas-v0</code> — held by <code>atlas_a51_private_atlas_reviewer_response_hold_selector_feed</code> — held_pending_reviewer_response_or_explicit_redirect</li>
+          <li><code>product-roadmap</code> — held by <code>prod_a10_private_product_roadmap_pause_digest_feed</code> — paused_by_product_roadmap_pause_digest</li>
+          <li><code>public-math-review</code> — held by <code>eml_d109_private_reviewer_response_availability_guard_feed</code> — held_pending_actual_reviewer_response</li>
+          <li><code>training-cost-estimator</code> — held by <code>prod_a21_training_cost_estimator_skeleton_hold_digest_feed</code> — held_by_prod_a21</li>
+        </ul>
+      </section>
+      <section aria-labelledby="retracted-title" class="surface-section">
+        <div class="section-heading"><p class="eyebrow">Retracted claims</p><h2 id="retracted-title">Retracted claims</h2></div>
+        <ul>
+          <li><code>claim:C259_cross_genome_3</code> — <code>exploration/C259_cross_genome/FINDINGS.md:93</code> — ## Falsifiability — what would have killed the claim</li>
+          <li><code>claim:E196_algorithmic_corpus_5</code> — <code>exploration/E196_algorithmic_corpus/FINDINGS.md:116</code> — prediction in the session prompt is rejected. Real-world</li>
+          <li><code>claim:E196_algorithmic_corpus_16</code> — <code>exploration/E196_algorithmic_corpus/FINDINGS.md:224</code> — **Verdict: REJECTED.** Median `max_path_r` is 1.0 for BOTH groups.</li>
+          <li><code>claim:Frontier_A_resolution_096_097_2026_05_11_1</code> — <code>exploration/Frontier_A_resolution_096_097_2026_05_11/FINDINGS.md:70</code> — guess to 2×10⁻⁵ /t is **RETRACTED.**</li>
+          <li><code>claim:Frontier_A_sigma099_T1e6_2026_05_10_1</code> — <code>exploration/Frontier_A_sigma099_T1e6_2026_05_10/FINDINGS.md:10</code> — (PARTIAL_OBSERVATIONS only — killed to free CPU for this run).</li>
+          <li><code>claim:Frontier_A_sigma099_T1e6_2026_05_10_4</code> — <code>exploration/Frontier_A_sigma099_T1e6_2026_05_10/FINDINGS.md:43</code> — killed T=10⁵ probe earlier today.</li>
+          <li><code>claim:Frontier_D_hd_vs_chain_2026_05_10_1</code> — <code>exploration/Frontier_D_hd_vs_chain_2026_05_10/FINDINGS.md:99</code> — spectrum) is **rejected at this resolution and corpus size**. The</li>
+          <li><code>claim:alpha-6.214-recheck-2026-04-27_2</code> — <code>exploration/alpha-6.214-recheck-2026-04-27/FINDINGS.md:5</code> — **Status:** REJECTED-IN-CURRENT-SETUP (the value does not appear at any</li>
+        </ul>
+      </section>
+      <section aria-labelledby="negative-title" class="surface-section">
+        <div class="section-heading"><p class="eyebrow">Negative results</p><h2 id="negative-title">Negative results</h2></div>
+        <ul>
+          <li><code>claim:E193_numerical_stability_1</code> — <code>exploration/E193_numerical_stability/FINDINGS.md:5</code> — **Outcome.** Partial signal (good case). Tool prototype NOT shipped.</li>
+          <li><code>claim:E193_numerical_stability_3</code> — <code>exploration/E193_numerical_stability/FINDINGS.md:108</code> — negative, **two-sided p = 0.69 (not significant)**.</li>
+          <li><code>claim:E193_numerical_stability_4</code> — <code>exploration/E193_numerical_stability/FINDINGS.md:162</code> — (NOT significant at alpha=0.05). Sample size at c=-1 is small (n=19).</li>
+          <li><code>claim:E199_superbest_stability_2</code> — <code>exploration/E199_superbest_stability/FINDINGS.md:11</code> — tested. **30% accuracy is below the 70% threshold for a generic</li>
+          <li><code>claim:cat_vision_2</code> — <code>exploration/cat_vision/FINDINGS.md:56</code> — intensity. Below human cone threshold; only rod-driven luminance</li>
+        </ul>
+      </section>
+      <section aria-labelledby="rule-title" class="surface-section">
+        <div class="section-heading"><p class="eyebrow">Standing claim rule</p><h2 id="rule-title">Standing claim rule</h2></div>
+        <blockquote>No training-cost estimate, training-savings, estimator-accuracy, runtime performance, compiler-correctness, SDK-stability, hardware-readiness, silicon-readiness, catalog-completeness, or broad EML-advantage claim unless a bounded artifact proves that exact claim.</blockquote>
+      </section>
+      <section aria-labelledby="lean-title" class="surface-section">
+        <div class="section-heading"><p class="eyebrow">Lean status</p><h2 id="lean-title">Lean status</h2></div>
+        <ul>
+          <li>Lean theorems: <code>468</code></li>
+          <li>Lean sorries: <code>5</code></li>
+          <li>MachLib core sorries: <code>0</code></li>
+          <li>MachLib discovered sorries: <code>222</code></li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <p>Byte-derived from <code>pub-r0-brake-side-ledger-generator</code> (2026-06-10). Navigate: <a href="../">monogate.net</a>.</p>
+    </footer>
+  </body>
+</html>

@@ -19,7 +19,7 @@
       <section class="hero" aria-labelledby="page-title">
         <p class="eyebrow">Evidence &amp; Claims Status</p>
         <h1 id="page-title">Brake-side ledger</h1>
-        <p class="lede">Held lanes, retracted claims, negative results, standing rule, Lean status. Byte-derived from <code>pub-r0-brake-side-ledger-generator</code> (2026-06-10), with Lean status hand-refreshed against the live repos on 2026-06-14.</p>
+        <p class="lede">Held lanes, retracted claims, negative results, standing rule, Lean status. Byte-derived from <code>pub-r0-brake-side-ledger-generator</code> (2026-06-10). Lean status numbers below: an interim hand-refresh on 2026-06-14 mixed counting methods (raw `grep -o sorry` vs the canonical `builder_v2.py` strip-comments method that produced the 2026-06-10 baseline); the discovered-sorries number has been corrected to the canonical method (see Lean status block for the methodology disclosure). A CI-emitted `status.json` is in flight to remove the hand entirely.</p>
       </section>
     </header>
     <main>
@@ -77,7 +77,7 @@
           <li>Lean theorems: <code>470</code> <small>(monogate-lean MonogateEML/)</small></li>
           <li>Lean sorries: <code>5</code> <small>(aggregator-verified, monogate-lean)</small></li>
           <li>MachLib core sorries: <code>0</code> <small>(8-file core: Basic, Exp, Log, Trig, EML, Hyperbolic, HyperbolicPreservation, SelfMapConjugacy)</small></li>
-          <li>MachLib discovered sorries: <code>269</code> <small>(Forge-emitted scaffolding; up from 222 on 2026-06-10 due to Forge emission cadence)</small></li>
+          <li>MachLib discovered sorries: <code>221</code> <small>(canonical method: strip Lean block + line comments, count `\bsorry\b`, file scope = all non-core .lean under foundations/MachLib/ excluding Test.lean). Was 222 on 2026-06-10 → 221 today = −1 net this cycle. An interim hand-refresh on 2026-06-14 reported "269 (up from 222)"; that was raw `grep -o sorry` without docstring stripping, not the canonical method, and is corrected here.</small></li>
           <li>MachLib Khovanskii closure: <code>1 framework + 3 Forge @verify contracts</code> <small>(2026-06-14: SingleExpKhovanskii reduction; Butler-Volmer zero-iff, plasma concentration nonneg, defibrillator sign-preservation)</small></li>
         </ul>
       </section>

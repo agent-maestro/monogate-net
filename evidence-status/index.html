@@ -72,18 +72,40 @@
         <blockquote>No training-cost estimate, training-savings, estimator-accuracy, runtime performance, compiler-correctness, SDK-stability, hardware-readiness, silicon-readiness, catalog-completeness, or broad EML-advantage claim unless a bounded artifact proves that exact claim.</blockquote>
       </section>
       <section aria-labelledby="lean-title" class="surface-section">
-        <div class="section-heading"><p class="eyebrow">Lean status</p><h2 id="lean-title">Lean status</h2></div>
+        <div class="section-heading"><p class="eyebrow">MachLib verification status (CI-generated)</p><h2 id="lean-title">MachLib verification status</h2></div>
+        <div id="machlib-status" data-state="loading">
+          <p id="machlib-status-message">Fetching latest <code>status.json</code> from <code>agent-maestro/machlib@status-data</code>…</p>
+          <noscript>
+            <p><strong>JavaScript is required</strong> to render the CI-emitted verification status. The raw data is at
+              <a href="https://raw.githubusercontent.com/agent-maestro/machlib/status-data/status.json">raw.githubusercontent.com/agent-maestro/machlib/status-data/status.json</a>
+              and may be inspected directly.</p>
+          </noscript>
+        </div>
+        <p class="lede" style="margin-top: 0.8em;">
+          The block above is fetched fresh from the machlib repo's CI-only
+          <code>status-data</code> branch on every page load. The displayed
+          SHA + timestamp belong to the <em>data</em>, not this page. Hand-edits
+          to the source tree cannot reach this surface; only the GitHub Actions
+          runner writes the branch.
+        </p>
+      </section>
+
+      <section aria-labelledby="lean-legacy-title" class="surface-section">
+        <div class="section-heading"><p class="eyebrow">Other Lean surfaces (still byte-derived)</p><h2 id="lean-legacy-title">Other Lean surfaces</h2></div>
         <ul>
-          <li>Lean theorems: <code>470</code> <small>(monogate-lean MonogateEML/)</small></li>
-          <li>Lean sorries: <code>5</code> <small>(aggregator-verified, monogate-lean)</small></li>
-          <li>MachLib core sorries: <code>0</code> <small>(8-file core: Basic, Exp, Log, Trig, EML, Hyperbolic, HyperbolicPreservation, SelfMapConjugacy)</small></li>
-          <li>MachLib discovered sorries: <code>221</code> <small>(canonical method: strip Lean block + line comments, count `\bsorry\b`, file scope = all non-core .lean under foundations/MachLib/ excluding Test.lean). Was 222 on 2026-06-10 → 221 today = −1 net this cycle. An interim hand-refresh on 2026-06-14 reported "269 (up from 222)"; that was raw `grep -o sorry` without docstring stripping, not the canonical method, and is corrected here.</small></li>
-          <li>MachLib Khovanskii closure: <code>1 framework + 3 Forge @verify contracts</code> <small>(2026-06-14: SingleExpKhovanskii reduction; Butler-Volmer zero-iff, plasma concentration nonneg, defibrillator sign-preservation)</small></li>
+          <li>Lean theorems: <code>470</code> <small>(monogate-lean MonogateEML/, byte-derived 2026-06-10)</small></li>
+          <li>Lean sorries: <code>5</code> <small>(aggregator-verified, monogate-lean, byte-derived 2026-06-10)</small></li>
         </ul>
+        <p class="lede" style="margin-top: 0.5em;">These two are still
+          byte-derived from <code>pub-r0-brake-side-ledger-generator</code>
+          (2026-06-10) rather than CI-emitted. Folding them into the
+          CI-generated <code>status.json</code> is follow-up work; until
+          then, they may lag.</p>
       </section>
     </main>
     <footer>
-      <p>Byte-derived from <code>pub-r0-brake-side-ledger-generator</code> (2026-06-10); Lean status hand-refreshed 2026-06-14. Navigate: <a href="../">monogate.net</a>.</p>
+      <p>MachLib block: CI-emitted, source <a href="https://github.com/agent-maestro/machlib/blob/master/.github/workflows/status.yml">status.yml</a>. Other Lean surfaces: byte-derived from <code>pub-r0-brake-side-ledger-generator</code> (2026-06-10). Navigate: <a href="../">monogate.net</a>.</p>
     </footer>
+    <script src="machlib-status.js" defer></script>
   </body>
 </html>
